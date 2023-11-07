@@ -3,6 +3,10 @@ import { useState } from 'react'
 import './App.css'
 
 function App() {
+  const [Lenght,setLenght] = useState(8);
+  const [NumberAllowed, setNumberAllowed] = useState(false);
+  const [Chr,setChr] =useState(false);
+  const [Password,setPassword] =useState("");
 
   return (
     <>
