@@ -14,6 +14,8 @@ function App() {
 
 
   const copyToClipboard = useCallback(()=>{
+    // PasswordRef.current?.setSelectionRange(0,9)
+    // select number within given range
     PasswordRef.current?.select()
     window.navigator.clipboard.writeText(Password)
     },[Password])
