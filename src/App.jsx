@@ -14,6 +14,7 @@ function App() {
 
 
   const copyToClipboard = useCallback(()=>{
+    PasswordRef.current?.select()
     window.navigator.clipboard.writeText(Password)
     },[Password])
   const passwordGenerater = useCallback(() => {
@@ -50,7 +51,7 @@ function App() {
     {Password}
     
     </p> */}
-    <input type='text' className="text-xl text-bold font-medium text-red-500" value={Password} ref={PasswordRef} />
+    <input type='text' className="outline-none text-xl text-bold font-medium text-red-500" value={Password} ref={PasswordRef} />
     <p className="text-slate-500">! Copy to ClipBoard</p>
   </div>
 </div>
